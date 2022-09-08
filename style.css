@@ -67,13 +67,14 @@
 .title_text{
     width: 1300px;
     height: 500px;
-    background-color: #5C98AB;
-    padding: 133px 274px 134px 300px;
+    background-color:#5C98AB;   
+    padding: 133px 0 134px 0;
     box-sizing: border-box;
 }
 
 .text{
     width: 726px;
+    margin: 0 auto;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 36px;
@@ -84,47 +85,37 @@
 
 .description_kvadrat{
     max-width: 696px;
-  
+    position: relative; 
 }
 
 .kvadrat_text{  
-    position: relative; 
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
     margin: 250px 0 216px 0;
-   
 }
 
-.kvadrat_text::before{
-    content: '';
+.kvadrat{
     position: absolute;
     width: 178px;
     height: 121px;
-    background-color: #BFDEFB;
-    top: -212px;
+    background-color: #BFDEFB; 
+}
+
+.kvad_1{
+    top: -121px;
     left: -364px;
 }
 
-/* .kvadrat_text::before{
-    content: '';
-    position: absolute;
-    width: 178px;
-    height: 121px;
-    background-color: #BFDEFB;
-    bottom: -212px;
-    right: -364px;
-} */
+.kvad_2{
+    bottom: 0;
+    left: -364px;
+}
 
-.kvadrat_text::after{
-    content: '';
-    position: absolute;
-    width: 178px;
-    height: 121px;
-    background-color: #BFDEFB;
-    top: 0;
-    right: -380px;
+.kvad_3{
+    top: 20px;
+    right: -364px;
 }
 
 .circle_text{
