@@ -5,30 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework2</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bgr">
-    <header class="container header">
-        <nav class="nav">
+<body>
+    <header class="header">
+        <nav >
             <ul class="nav_ul">
-                <li class="nav_li"><a class="link" href="">HOME</a></li>
-                <li class="nav_li"><a class="link" href="">PHOTO</a></li>
-                <li class="nav_li"><a class="link" href="">STOCK</a></li>
-                <li class="nav_li"><a class="link" href="">SAVE</a></li>
+                <li class="nav_li">
+                    <a class="nav_link" href="#">HOME</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_link" href="#">PHOTO</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_link" href="#">STOCK</a>
+                </li>
+                <li class="nav_li">
+                    <a class="nav_link" href="#">SAVE</a>
+                </li>
             </ul>
         </nav>
     </header>
-    <section class="container bground">
-        <p class="title">SAVE MOMENTS</p>
+    <section class="container bg_title">
+        <h1 class="title">SAVE MOMENTS</h1>
         <button class="title_button">BUY NOW</button>
-        </button>
     </section>
-    <section class="container description">
-        <p class="description_text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section> 
+    <section class="container title_text">
+        <p class="text">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+    <section class="container description_kvadrat">
+        <p class="kvadrat_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde aliquid quibusdam eum, velit incidunt est natus? Tempora tenetur veniam aliquam cupiditate ipsa ad, inventore sunt nisi ab fuga, debitis corrupti?
+        </p>
+    </section>
+    <section class="container description_kvadrat">
+        <p class="circle_text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde aliquid quibusdam eum, velit incidunt est natus? Tempora tenetur veniam aliquam cupiditate ipsa ad, inventore sunt nisi ab fuga, debitis corrupti?
+        </p>
+    </section>
+    <section class="container forma">
+        <form>
+            <div class="form_name">
+                <label class="label" for="name">Name</label>
+                <input id="name" class="input" placeholder="Lena" type="text">                
+            </div>
+            <div class="form_name">
+                <label class="label" for="emal_1">Email</label>
+                <input id="email_1" class="input" placeholder="email@gmail.com" type="email">                
+            </div>
+            <div class="form_name">
+                <label class="label" for="emal_2">Email</label>
+                <input id="email_2" class="input" placeholder="lena@gmail.com" type="email">                
+            </div>
+            <button class="button">FREE PRE-ORDER</button>
+        </form>
+    </section>
+    
 </body>
 </html>
