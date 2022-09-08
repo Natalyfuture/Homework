@@ -1,17 +1,15 @@
 .container{
-    max-width: 1300px;
+    max-width: 1440px;
     margin: 0 auto;
     background-color: #FFFFFF;
 }
 
 .header{
     margin: 53px 0 52px 0;
-   
 }
 
 .nav_ul{
-    text-align: center;
-      
+    text-align: center;   
 }
 
 .nav_li{
@@ -33,6 +31,7 @@
 }
 
 .bg_title{
+    max-width: 1300px;
     background-image: url(./img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,7 +67,8 @@
     width: 1300px;
     height: 500px;
     background-color:#5C98AB;   
-    padding: 133px 0 134px 0;
+    padding: 133px 134px;
+    margin-bottom: 216px;
     box-sizing: border-box;
 }
 
@@ -84,8 +84,9 @@
 }
 
 .description_kvadrat{
-    max-width: 696px;
-    position: relative; 
+    margin: 0 auto;
+    text-align: center;
+    position: relative;  
 }
 
 .kvadrat_text{  
@@ -93,7 +94,9 @@
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
-    margin: 250px 0 216px 0;
+    max-width: 696px; 
+    text-align: center;
+    margin: 0 auto;   
 }
 
 .kvadrat{
@@ -105,26 +108,22 @@
 
 .kvad_1{
     top: -121px;
-    left: -364px;
 }
 
 .kvad_2{
     bottom: 0;
-    left: -364px;
 }
 
 .kvad_3{
     top: 20px;
-    right: -364px;
+    right: 0;
 }
 
+.circle{
+    margin: 216px 0 123px;
+}
 .circle_text{
     position: relative;
-    font-family: 'Roboto';
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    margin-bottom: 123px;
 }
 
 .circle_text::before{
@@ -135,7 +134,7 @@
     border-radius: 50%;
     background: #5C98AB;
     top: -58px;
-    left: -29px;
+    left: 0;
 }
 
 .circle_text::after{
@@ -146,8 +145,7 @@
     border-radius: 50%;
     background: #BFDEFB;
     right: -130px;
-    bottom: -65px;
-    
+    bottom: -65px;  
 }
 
 .forma{
@@ -166,14 +164,13 @@
     border: 1px solid black;
     border-radius: 5px;
     padding: 36px 0 11px 34px;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;    
 }
 
 .label{
     position: absolute;
-    top: 14px;
-    left: 361px;
+    top: 10px;
+    left: 430px;
     font-family: 'Open Sans';
     font-weight: 300;
     font-size: 14px;
