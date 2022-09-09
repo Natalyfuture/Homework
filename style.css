@@ -164,7 +164,12 @@
     border: 1px solid black;
     border-radius: 5px;
     padding: 36px 0 11px 34px;
-    box-sizing: border-box;    
+    box-sizing: border-box;  
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    color: #000;  
 }
 
 .label{
