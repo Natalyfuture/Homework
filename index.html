@@ -4,21 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practyca|Grid</title>
+    <title>Homework|3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="grid">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
-        <div class="item">10</div>
-    </div>    
+    <header class="header">
+        <div class="container flex">
+            <div class="flex logo">
+                <img src="./img/logo.png" alt="logo">            
+                <div>
+                    <h6 class="logo_title">Foundation</h6>
+                    <p class="logo_text">Startup landing template</p>
+                </div>
+            </div>
+            <nav class="flex header_nav">
+                <ul class="header_ul flex">
+                    <li class="header_li">
+                        <a href="#" class="header_link">Home </a>
+                    </li>
+                    <li class="header_li">
+                        <a href="#" class="header_link">Stories</a>
+                    </li>
+                </ul>
+                <button class="header_button">Get Started</button>
+            </nav>
+        </div>
+    </header>
+    <section class="description">
+        <div class="container flex">
+            <div class="description_content">
+                <h6 class="description_question description_text">What is it about?</h6>
+                <p class="description_text">Building a website for a startup that looks amazing is not a rocket science anymore.</p>
+            </div>
+            <div class="description_content">
+                <h6 class="description_question description_text">Who is it for?</h6>
+                <p class="description_text">Startups, small companies and teams, entrepreneurs and web developers.</p>
+            </div>
+        </div>
+    </section>
+    <section class="logos">
+        <div class="container flex">
+            <img src="./img/logos/NYT.png" alt="NewYorkTimes">
+            <img src="./img/logos/Forbs.png" alt="Forbs">
+            <img src="./img/logos/Apple.png" alt="Apple">
+            <img src="./img/logos/Mashable.png" alt="Mashable">
+            <img src="./img/logos/WSJ.png" alt="WSJ">
+            <img src="./img/logos/Google.png" alt="Google">
+        </div>
+    </section>
+    <section class="audience">
+        <div class="audience_description">
+            <h6 class="audience_subtitle">Engage Visitors</h6>
+            <h1 class="audience_title">Understand your audience</h1>
+            <p class="audience_text">Early stage company? Eligible applicants get all of our products for just $49 a month.</p>
+        </div>
+        <div class="audience_buttons">
+            <button class="header_button">Get Started</button>
+            <button class="audience_button">Learn More</button>
+        </div>
+        <div class="container audience_grid">
+            <img src="./img/audience/man.png" alt="man">
+            <img src="./img/audience/TV.png" alt="TV">
+            <img src="./img/audience/Light.png" alt="Light">
+            <img src="./img/audience/sport.png" alt="sport">
+        </div>
+    </section>
+    <section>
+        <div class="surface_description">
+            <h1 class="surface_title">All Surfaces Covered</h1>
+            <p class="surface_text">IOON kills bacteria on your hands, food, tables, laptops, you name it</p>
+        </div>
+        <div class="container surface_grid">
+            <div class="item">
+                <img src="./img/Surface/apple.png" alt="apple">
+            </div>
+            <div class="item">
+                <img src="./img/Surface/tram.png" alt="tram">
+            </div>
+            <div class="item">
+                <img src="./img/Surface/man.png" alt="man">
+            </div>
+            <div class="item">
+                <img src="./img/Surface/hand.png" alt="hand">
+            </div>
+            <div class="item">
+                <img src="./img/Surface/phone.png" alt="phone">
+            </div>
+            <div class="item">
+                <img src="./img/Surface/child.png" alt="child">
+            </div>
+            <div class="item">
+                <img src="./img/Surface/dog.png" alt="dog">
+            </div>
+        </div>
+    </section>
 </body>
 </html>
