@@ -164,7 +164,7 @@ body{
 .audience_grid{
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(5, 262px);
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .surface_description{
@@ -191,8 +191,8 @@ body{
     margin-top: 89px;
     display: grid;
     gap: 45px;
-    grid-template-columns: repeat(3, 346px);
-    grid-template-rows: repeat(3, 208px);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .item:nth-child(3), .item:nth-child(4){
