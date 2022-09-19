@@ -306,6 +306,35 @@ body{
     grid-template-columns: repeat(4, 1fr);
 }
 
+.img_audience{
+    margin-bottom: 22px;
+}
+
+.img_audience-bg{
+    display: block;
+    padding: 22px 0 33px;
+    text-align: center;
+    width: 262px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.img_audience-text{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: bold;
+    color: #2B292D;
+}
+
+.img_audience-bg:hover, .img_audience-text:hover{
+    cursor: pointer;
+    background-color: rgba(49, 65, 197, 1);
+    color: #FFFFFF;
+    transition: 1s;
+}
+
 .surface{
     padding-bottom: 91px;
 }
@@ -362,6 +391,10 @@ body{
 
     .img_audience{
         max-width: 255px;
+    }
+
+    .img_audience-bg{
+        width: 250px;
     }
 
     .surface_grid{
@@ -637,6 +670,10 @@ body{
         gap: 6px;
     }
 
+    .img_audience-bg{
+        width: 210px;
+    }
+
     .img_audience{
         max-width: 227px;
     }
@@ -699,6 +736,19 @@ body{
         margin-bottom: 20px;
     }
 
+    .audience_grid{
+        margin-top: 40px;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .img_audience-bg{
+        width: 262px;
+        height: 300px;
+    }
+
     .img_audience{
         max-width: 170px;
     }
@@ -742,7 +792,7 @@ body{
     }
 
     .audience_grid{
-        gap: 1px;
+        gap: 20px;
     }
 
     .img_audience{
@@ -894,7 +944,7 @@ body{
     .audience_button-blue{
         width: 290px;
         height: 48px;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
     }
     .white_button{
         width: 290px;
@@ -907,9 +957,7 @@ body{
     }
 
     .audience_grid{
-        margin-top: 40px;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        margin-top: 20px;
         gap: 15px;
     }
 
