@@ -76,8 +76,17 @@ body{
     cursor: pointer;
     transition: 300ms;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1e-05) 100%), #3a5bfd;
+    animation: shadow 1s ease infinite;
 }
 
+@keyframes shadow{
+    0%{
+        box-shadow:0 0 0 rgba(15, 22, 57, 0.8);
+    }
+    100%{
+        box-shadow: 0 0 0 10px rgba(15, 22, 57, 0.1);
+    }
+}
 /* .build{
     background-color: rgba(243, 198, 189, 1);
     padding: 71px 0 77px;
@@ -377,11 +386,9 @@ body{
     grid-row: span 2;
 }
 
-.img_surface:hover{
-    cursor: pointer;
-    width: 102%;
-    height: 102%;
-    transition: 200ms;
+.item:hover .img_surface{
+    transform: rotateY(180deg);
+    transition: 1.5s;
 }
 
 .free_trial{
@@ -786,6 +793,10 @@ body{
 
     .img_surface{
         max-width: 270px;
+    }
+
+    .text{
+        font-size: 17px;
     }
 
 }
