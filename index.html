@@ -205,7 +205,7 @@
             <div class="trial_content">
                 <h1 class="trial_title">Start your free trial.</h1>
                 <p class="trial_text">Get notified about company updates, news and blog posts. We hate spam.</p>
-                <div class="flex trial_form flex_column">
+                <div class="flex flex_column-trial trial_form">
                     <input type="email" class="trial_input" placeholder="Enter your email">
                     <button class="button trial_button">Get Started</button>
                 </div>
@@ -246,23 +246,23 @@
 
     </section>
     <footer class="footer">
-        <div class="container">
-            <div class="flex">
-                <div class="">
-                    <div class="flex logo">
+        <div class="container flex flex_column">
+                <div class="footer_logo">
+                    <div class="flex logo flex_column">
                         <img class="logo_img" src="./img/logo.png" alt="logo">            
-                        <div class="logo_content"
-                            <h6 class="logo_title">Foundation</h6>
-                            <p class="logo_text">Startup landing template</p>
+                        <div class="logo_content logo_content-footer">
+                            <h6 class="logo_title logo_title-footer">Foundation</h6>
+                            <p class="logo_text logo_text-footer">Startup landing template</p>
                         </div>
                     </div>
                     <div class="footer_text">Foundation is a website template for startups and small teams. It helps to build a website in no time.</div>
-                    <div class="flex">
-                        <img src="./img/footer/App Store.png" alt="AppStore">
-                        <img src="./img/footer/Google Play.png" alt="Google Play">
+                    <div class="flex footer_logos">
+                        <img class="img_logos-app" src="./img/footer/App Store.png" alt="AppStore">
+                        <img class="img_logos-google"  src="./img/footer/Google Play.png" alt="Google Play">
                     </div>
                 </div>
-                <div class="content">
+                <hr class="line_before">
+                <div class="content_product">
                     <h3 class="footer_title">Product</h3>
                     <p class="product_content">Acquire Users </p>
                     <p class="product_content">Content Marketing </p>
@@ -270,14 +270,34 @@
                     <p class="product_content">Customer Management</p>
                     <p class="product_content">Virtual Inbox </p>
                 </div>
-                <div class="content">
+                <div class="content_company">
                     <h3 class="footer_title">Company</h3>
                     <p class="product_content">About Foundation </p>
                     <p class="product_content">Brand Guidelines </p>
                     <p class="product_content">Press Kit  </p>
                     <p class="product_content">Support</p>
                 </div>
+        </div>
+        <hr class="line_after">
+        <div class="container flex flex_column">
+            <nav class="footer_nav">
+                <ul class=" flex footer_ul">
+                    <li class="footer_li">
+                        <a href="" class="footer_link">Terms </a>
+                    </li>
+                    <li class="footer_li">
+                        <a href="" class="footer_link">Privacy </a>
+                    </li>
+                    <li class="footer_li">
+                        <a href="" class="footer_link">License</a>
+                    </li>
+            </nav>
+            <div class="icons_footer flex">
+                <img class="img_footer-icons" src="./img/footer/icons/twitter.png" alt="twitter">
+                <img class="img_footer-icons"src="./img/footer/icons/fb.png" alt="fb">
+                <img src="./img/footer/icons/LinkedIn.png" alt="LinkedIn">
             </div>
+
         </div>
     </footer>
 </body>
