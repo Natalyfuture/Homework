@@ -1,5 +1,5 @@
 body{
-    font-family: 'Work Sans' sans-serif;
+    font-family: 'Work Sans';
 }
 
 .container{
@@ -87,7 +87,7 @@ body{
 .button{
     width: 160px;
     height: 48px;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #3040C4;
+    background:  #3040C4;
     font-size: 18px;
     line-height: 13px;
     font-weight: 700;
@@ -100,7 +100,7 @@ body{
 .button:hover{
     cursor: pointer;
     transition: 300ms;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1e-05) 100%), #3a5bfd;
+    background:  #3a5bfd;
     animation: shadow 1s ease infinite;
 }
 
@@ -252,6 +252,10 @@ body{
 
 .subtitle_red{
     color: #F1592B;
+}
+
+.subtitle_green{
+    color: #009B4D;
 }
 
 .subtitle_blue{
@@ -654,6 +658,9 @@ body{
         display: none;
    }
  
+   .header_ul{
+    margin-right: 0;
+}
    .menu{
         position: relative;
    }
@@ -792,6 +799,14 @@ body{
         margin: 0 auto;
     }
 
+    .features{
+        padding: 11px 0 103px;
+    }
+
+    .feature_content{
+        max-width: 461px;
+    }
+
     .inbox{
         padding: 56px 0 69px;
     }
@@ -808,7 +823,7 @@ body{
 
     .img_inbox{
         max-width: 422px;
-        width: 100;
+        width: 100%;
 
     }
 
@@ -1375,25 +1390,11 @@ body{
     }
 
     .logos{
-        padding: 0 auto 49px;
+        padding_buttom: 49px;
     }
 
     .img_logos{
         max-width: 107px;
-    }
-
-    .img_gray{
-        filter: grayscale(100%);
-    }
-
-    .img{
-        max-width: 70px;
-        
-    } 
-    
-    .img_inbox{
-        max-width: 290px;
-        width: 100;
     }
 
     .inbox{
@@ -1403,6 +1404,7 @@ body{
     .flex_inbox{
         flex-direction: column;
     }
+    
     .inbox_description{
         max-width: 290px;
         margin: 32px 0 40px;
