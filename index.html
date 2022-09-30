@@ -49,7 +49,7 @@
                     <p class="build_text">Create live segments and target the right people for messages based on their behaviors.</p>
                     <div class="audience_buttons build_buttons">
                         <button class="button audience_button-blue">Get Started</button>
-                        <button class="button white_button build_button">Learn More</button>
+                        <button id="open_modal-build" class="button white_button build_button">Learn More</button>
                     </div>
                 </div>
                 <div>
@@ -92,12 +92,53 @@
         </div>
     </section>
     <section class="features">
-        <div class="container">
+       <div class="feature_wrapper flex">
+        <div class="feature_container container">
             <div class="feature_content">
                 <h6 class="info_subtitle subtitle_green">Features</h6>
                 <h1 class=" feature_title info_title ">Easily find leads and customers</h1>
+                <p class="info_text feature_text">Send one-off and automated email, push, and in-app messages to people. Create better stories.</p>
             </div>
+            <div class="feature_items">
+                <div class="flex feature_flex">
+                    <div class="flex">
+                            <!-- <img src="./img/features_icon/customers.svg" alt="customers"> -->
+                        <svg class="change_color-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z" fill="#2B292D"/>
+                        </svg>
+                        <p id="change_customers" class="feature_pretitle">Acquire new customers</p>
+                    </div>
+                    <p class="feature_icon">></p>
+                </div>
+                <div class="icon_text">Everything you need to start building – including open-source code, documentation.</div>
+                <div id="line_first" class="line"></div>
+            </div>
+            <div class="feature_items">
+                 <div class="flex feature_flex">
+                    <div class="flex">
+                        <img src="./img/features_icon/users.svg" alt="users">
+                        <p id="change_engage" class="feature_pretitle">Engage users</p>
+                    </div>
+                    <p class="feature_icon">></p>
+                </div>
+                <div class="icon_text">Everything you need to start building – including open-source code, documentation.</div>
+                <div id="line_second" class="line"></div>
+            </div>
+            <div class="feature_items">
+                <div class="flex feature_flex">
+                    <div class="flex">
+                        <img src="./img/features_icon/develop.svg" alt="develop">
+                        <p id="change_develop" class="feature_pretitle">Develop across platforms</p>
+                    </div>
+                    <p class="feature_icon">></p>
+                </div>
+                <div class="icon_text">Everything you need to start building – including open-source code, documentation.</div>
+                <div id="line_third" class="line"></div>
+            </div>            
         </div>
+        <img class="feature_space" src="./img/features_icon/InSpace.png" alt="In Space">
+       </div>
+        <img class="feature_face" src="./img/features_icon/face.svg" alt="face">
     </section>
     <section class="inbox">
         <div class="container flex flex_inbox">
@@ -153,7 +194,7 @@
             </div>
             <div class="audience_buttons">
                 <button class="button audience_button-blue">Get Started</button>
-                <button class="button white_button">Learn More</button>
+                <button id="open_modal-audience" class="button white_button">Learn More</button>
             </div>
             <div class="container container_audience audience_grid">
                 <div class="img_audience-bg">
@@ -173,6 +214,51 @@
                     <img class="img_audience" src="./img/audience/sport.png" alt="sport">
                     <p class="img_audience-text">Creators</p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="hiring">
+        <div class="container">
+            <div class="inbox_description hiring_description">
+                <h1 class="info_title hiring_title">We’re hiring</h1>
+                <p class="info_text hiring_text">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
+                <button class="button hiring_button">More about Company</button>
+            </div>
+            <div class="hiring_about">
+                <div>
+                    <div class="flex">
+                        <div class="flex hiring_wrapper">
+                            <h1 class="hiring_about-title">Front-End Developer</h1>
+                            <p class="hiring_about-text">Los Angeles / Remote</p>
+                        </div>
+                        <p class="feature_icon">></p>
+                    </div>
+                </div>
+                <p class="hiring_about-content">Everything you need to start building – including open-source code, documentation.</p>
+            </div>
+            <div class="hiring_about">
+                <div>
+                    <div class="flex">
+                        <div class="flex hiring_wrapper">
+                            <h1 class="hiring_about-title">Community Manager</h1>
+                            <p class="hiring_about-text">New York / Full-Time</p>
+                        </div>
+                            <p class="feature_icon">></p>
+                    </div>
+                </div>
+                <p class="hiring_about-content">Everything you need to start building – including open-source code, documentation.</p>
+            </div>
+            <div class="hiring_about">
+                <div>
+                    <div class="flex">
+                        <div class="flex hiring_wrapper">
+                            <h1 class="hiring_about-title">UX/UI Designer</h1>
+                            <p class="hiring_about-text">New York / Full-Time</p>
+                        </div>
+                            <p class="feature_icon">></p>
+                    </div>
+                </div>
+                <p class="hiring_about-content">Everything you need to start building – including open-source code, documentation.</p>
             </div>
         </div>
     </section>
@@ -250,8 +336,6 @@
                 </div>
             </div>      
         </div>
-        
-
     </section>
     <footer class="footer">
         <div class="container flex flex_column">
@@ -308,5 +392,24 @@
 
         </div>
     </footer>
+    <div class="modal_overlay">
+        <div class="modal">
+            <p class="modal_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ipsam aperiam, libero distinctio iste omnis.
+            </p>
+            <p class="close">x</p>
+        </div>
+    </div>
+    <div class="modal_fon">
+        <div class="modal">
+            <p class="modal_text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente minima odit optio vero at veritatis praesentium iure maiores libero nobis, laudantium unde iste vel asperiores aperiam ducimus sed labore nulla facere nihil. Dolore, necessitatibus. Provident optio architecto unde? Eligendi.
+            </p>
+            <p class="close">x</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/modal.js"></script>
 </body>
 </html
