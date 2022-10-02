@@ -1,0 +1,38 @@
+.bx-wrapper{
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 1400px;
+    margin-bottom: -111px;
+}
+
+.bx-vieport{
+    width: 100%;
+    overflow: visible;
+    opacity: unset;
+    position: relative;
+    height: 257px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(43, 41, 45, 0.5);
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus, .bx-wrapper .bx-pager.bx-default-pager a:hover {
+    background-color: rgba(49, 66, 197, 1);
+}
+
+@media screen and (max-width: 1090px){
+    .bx-viewport{
+        height: 234px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    .bx-viewport{
+        height: 335px;
+    }
+}

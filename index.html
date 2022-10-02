@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./slider.css">
 </head>
 <body>
     <header class="header">
@@ -34,7 +36,7 @@
                                 <a href="#" class="header_link">Home </a>
                             </li>
                             <li class="header_li">
-                                <a href="#" class="header_link">Stories</a>
+                                <a href="#" id="audience_link" class="header_link">Stories</a>
                             </li>
                         </ul>
                         <button class="button">Get Started</button>
@@ -102,10 +104,7 @@
             <div class="feature_items">
                 <div class="flex feature_flex">
                     <div class="flex">
-                            <!-- <img src="./img/features_icon/customers.svg" alt="customers"> -->
-                        <svg class="change_color-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.376 0 0 5.376 0 12C0 18.624 5.376 24 12 24C18.624 24 24 18.624 24 12C24 5.376 18.624 0 12 0ZM12 10.68C11.268 10.68 10.68 11.268 10.68 12C10.68 12.732 11.268 13.32 12 13.32C12.732 13.32 13.32 12.732 13.32 12C13.32 11.268 12.732 10.68 12 10.68ZM4.8 19.2L14.628 14.628L19.2 4.8L9.372 9.372L4.8 19.2Z" fill="#2B292D"/>
-                        </svg>
+                            <img src="./img/features_icon/customers.svg" alt="customers">
                         <p id="change_customers" class="feature_pretitle">Acquire new customers</p>
                     </div>
                     <p class="feature_icon">></p>
@@ -185,7 +184,7 @@
             </div>
         </div>
     </section>
-    <section class="audience">
+    <section id="audience" class="audience">
         <div class="container">
             <div class="inbox_description audience_description">
                 <h6 class="info_subtitle audience_subtitle">Engage Visitors</h6>
@@ -216,6 +215,61 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section class="logos">
+        <div class="container logos_grid">
+            <div class="img_logos">
+                <img class="img" src="./img/logos/NYT.png" alt="NewYorkTimes">
+            </div>
+            <div class="img_logos">
+                <img class="img" src="./img/logos/Forbs.png" alt="Forbs">
+            </div>
+            <div class="img_logos">
+                <img class="img" src="./img/logos/Apple.png" alt="Apple">
+            </div>
+            <div class="img_logos">
+                <img class=" img img_gray" src="./img/logos/Mashable.png" alt="Mashable">
+            </div>
+            <div class="img_logos">    
+                <img class="img" src="./img/logos/WSJ.png" alt="WSJ">
+            </div>           
+            <div class="img_logos">
+                <img class="img img_gray" src="./img/logos/Google.png" alt="Google">
+            </div>
+        </div>
+    </section>
+    <section class="slider">
+        <div class="container container_carusel">
+            <div class="carusel">
+                <div>
+                    <h1 class="carusel_pretitle">Trusted by the world’s most innovative businesses – big and small</h1>
+                    <p class="carusel_text">“Comprehensive set of startup tools for all imaginable entrepreneurial needs. Create landing pages, send emails, find freelancers. Perfect for sales, marketing, and support”</p>
+                    <div class="carusel_info">
+                        <p class="carusel_name">Viella Malkovich </p>
+                        <p class="carusel_position">Creative Director at Johnson</p>
+                    </div>
+                   <!--  <img class="carusel_img" src="./img/carusel.png" alt=""> -->
+                </div>
+                <div>
+                    <h1 class="carusel_pretitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h1>
+                    <p class="carusel_text">“Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur voluptatibus repudiandae molestiae iste placeat. Eos sunt aut inventore quos doloremque?”</p>
+                    <div class="carusel_info">
+                        <p class="carusel_name">Gabriella Williams </p>
+                        <p class="carusel_position">Creative Director at Johnson</p>
+                    </div>
+                   <!--  --> <img class="carusel_img" src="./img/carusel.png" alt="">
+                </div>
+                <div>
+                    <h1 class="carusel_pretitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi itaque earum facere dicta quidem eos ab?</h1>
+                    <p class="carusel_text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum porro quae dolorem officia mollitia similique corporis libero iste. Nemo aliquid reprehenderit suscipit?”</p>
+                    <div class="carusel_info">
+                        <p class="carusel_name">David Miller </p>
+                        <p class="carusel_position">Creative Director at Johnson</p>
+                    </div>
+                </div>
+            </div>
+            <img class="carusel_img" src="./img/carusel.png" alt="">
+        </div> 
     </section>
     <section class="hiring">
         <div class="container">
@@ -403,13 +457,19 @@
     <div class="modal_fon">
         <div class="modal">
             <p class="modal_text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sapiente minima odit optio vero at veritatis praesentium iure maiores libero nobis, laudantium unde iste vel asperiores aperiam ducimus sed labore nulla facere nihil. Dolore, necessitatibus. Provident optio architecto unde? Eligendi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam ex incidunt autem quod placeat iure fugit amet tempore consectetur dolores eaque, blanditiis, odio sequi.
             </p>
             <p class="close">x</p>
         </div>
     </div>
+    <div id="up">
+        <span>></span>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js" integrity="sha512-p55Bpm5gf7tvTsmkwyszUe4oVMwxJMoff7Jq3J/oHaBk+tNQvDKNz9/gLxn9vyCjgd6SAoqLnL13fnuZzCYAUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script/bxslider.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 </html
