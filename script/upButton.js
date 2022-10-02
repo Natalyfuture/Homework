@@ -12,5 +12,7 @@ $('#up').on('click', function(){
 
 $('#audience_link').on('click', function(e){
     e.preventDefault();
-    $('html, body').animate({scrollTop: $('#audience').offset().top}, 1000)
+    $('html, body').animate({scrollTop: $('#audience').offset().top}, 1000);
+    $('.menu-all').fadeOut()
 })
+

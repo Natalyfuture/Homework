@@ -843,7 +843,6 @@ body{
     display: none;
 }
 
-
 .modal{
     max-width: 550px;
     text-align: center;
@@ -884,8 +883,6 @@ body{
     border-radius: 50%;
     cursor: pointer;
 }
-
-
 
 #up span{
     position: absolute;
@@ -2057,7 +2054,6 @@ body{
         text-align: left;
     }
 
-
     .carusel_img {
         top: 591px;
         right: 10px;
@@ -2178,13 +2174,6 @@ body{
     .img_logos-app{
         margin-right: 10px;
     }
-
- /*    .line_before{
-        display: block;
-        margin: 40px 0 30px;
-        height: 10px;
-        background: rgba(5, 2, 7, 0.6);
-    } */
 
     .line_after{
         display: none;
