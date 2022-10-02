@@ -12,7 +12,13 @@ $('#up').on('click', function(){
 
 $('#audience_link').on('click', function(e){
     e.preventDefault();
+    $('.menu-all').fadeOut();
     $('html, body').animate({scrollTop: $('#audience').offset().top}, 1000);
-    $('.menu-all').fadeOut()
+    $('.checkbox').prop('checked', false)
 })
 
+$(".checkbox").on("click", function () {
+    if ($(this).prop("checked") === true) {
+        $('.menu-all').fadeIn()
+    }
+}) 
