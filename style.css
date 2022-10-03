@@ -37,14 +37,6 @@ body{
     color: rgba(43, 41, 45, 0.6);
 }
 
-.checkbox{
-    z-index: 7;
-}
-
-.check-wrapper{
-    z-index: 6;
-}
-
 .check{
     width: 30px;
     height: 3px;
@@ -61,7 +53,6 @@ body{
 
 .header_nav{
     margin-left: 441px;
-    z-index: 6;
 }
 
 .header_ul{
@@ -73,6 +64,11 @@ body{
     line-height: 25px; 
     color: rgba(43, 41, 45, 1);
     text-decoration: none;
+}
+
+.header_li{
+    width: 71px;
+    box-sizing: border-box;
 }
 
 .header_li:not(:last-of-type){
@@ -171,6 +167,9 @@ body{
 
 .feature_items{
     max-width: 459px;
+    border-bottom: 3px solid rgba(43, 41, 45, 0.25);
+    padding: 2px 0 10px;
+    cursor: pointer;
 }
 
 .feature_flex{
@@ -193,17 +192,8 @@ body{
     font-size: 18px;
     line-height: 26px;
     color: #2B292D;
-    margin-bottom: 10px;
     display: none;
 }
-
-.line{
-    width: 342px;
-    height: 1px;
-    background-color: rgba(43, 41, 45, 0.25);
-    margin: 15px 0;
-    /* display: none; */
-} 
 
 .feature_icon{
     font-weight: bold;
@@ -217,17 +207,9 @@ body{
 
 .change_color{
     color: #3142C6;
+    border-bottom:3px solid #3142C6 ;
     cursor: pointer;
     transition: 300ms;
-}
-
-.change_color-icon{
-    fill: #3142C6
-}
-.line_change{
-    display: block;
-    background-color: #3142C6;
-    height: 3px;
 }
 
 .features{
@@ -957,6 +939,11 @@ body{
          display: block;
      }
 
+    .container_menu{
+        max-width: 574px;
+        margin: 0 auto;
+    }
+
     .header_nav{
         display: none;
    }
@@ -964,6 +951,11 @@ body{
    .header_ul{
     margin-right: 0;
 }
+
+    .header_li{
+        width: 0;
+    }
+
    .menu{
         position: relative;
    }
@@ -1035,7 +1027,7 @@ body{
         background-color: #f4e3e0;
         top: 0;
         right: 0;
-        bottom: 0;
+        bottom: 1500px;
         left: 0;
         margin: 0;
         text-align: center;
@@ -1458,6 +1450,10 @@ body{
         top: 48px;
     }
 
+    .container_menu{
+        max-width: 437px;
+    }
+
     .features{
         padding: 10px 0 67px;
     }
@@ -1534,6 +1530,9 @@ body{
         padding: 30px 0 25px;
     }
     
+    .container_menu{
+        max-width: 309px;
+    }
 
     .img_build{
         max-width: 458px;
@@ -1628,6 +1627,10 @@ body{
 @media screen and (max-width: 480px){
     .container{
         max-width: 340px;
+    }
+
+    .container_menu{
+        max-width: 266px;
     }
 
     .img_build{
@@ -1762,6 +1765,10 @@ body{
         max-width: 300px;
     }
 
+    .container_menu{
+        max-width: 224px;
+    }
+
     .img_build{
         max-width: 300px;
     }
@@ -1847,6 +1854,10 @@ body{
 
     .logo_title {
         top: 32px;
+    }
+
+    .container_menu{
+        max-width: 194px;
     }
 
     .build{
